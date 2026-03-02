@@ -1,8 +1,6 @@
-# Random Cluster Model on Zachary's Karate Club
+# Random Cluster Model
 
-![Zachary Karate Club network](path/to/your/image.png)
-
-This repository contains Mathematica code to calculate the pairwise connectedness of nodes in the Zachary Karate Club network under the Random Cluster (RC) model. 
+This repository contains Mathematica code to calculate the pairwise Random Cluster (RC) connectedness of nodes in, e.g., the Zachary Karate Club network under the RC model. 
 
 The codebase provides two distinct approaches to evaluating the connectedness probability between nodes: a high-throughput Monte Carlo simulation for numerical estimation and an exact analytical calculation using the Tutte polynomial. 
 
@@ -32,7 +30,7 @@ For small graphs, it is possible to compute the exact partition function of the 
 
 ## Usage
 
-1. Open the `.m` or `.nb` file in Mathematica.
+1. Open the file in Mathematica.
 2. Evaluate the notebook. 
 3. The script will automatically fetch the Zachary Karate Club graph via `ExampleData`.
 4. The simulation will run and drop two data dumps into the same directory as the notebook:

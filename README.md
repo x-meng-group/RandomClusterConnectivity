@@ -14,7 +14,7 @@ This script executes the model on the standard Zachary Karate Club graph (34 nod
 Because exact calculations scale poorly with network size, the first half of the code uses a highly parallelized Monte Carlo approach. 
 
 * **Parameters:** It sweeps through edge probabilities *p* and cluster weights *q* in increments of Δp = 0.05 and Δq = 0.05. 
-* **Method:** It generates 1,000,000 subgraph configurations per *p*-value. To maintain numerical stability when calculating the statistical weights (*q* raised to the number of components), it shifts the exponent relative to the minimum number of components observed.
+* **Method:** It generates 1,000,000 configurations per *p*-value. To maintain numerical stability when calculating the statistical weights (*q* raised to the number of components), it shifts the exponent relative to the minimum number of components observed.
 * **Output:** Saves an `.mx` file containing numerical matrices of the pairwise connectedness probabilities.
 
 ### 2. Exact Theoretical Calculation
